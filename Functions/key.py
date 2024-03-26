@@ -12,7 +12,7 @@ def getKey():
 
 def setKey():
     key = Fernet.generate_key().decode()
-    conn = pyodbc.connect(r"Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=D:\Code\Password-Manager\Data\Database.accdb;")
+    conn = pyodbc.connect(r"Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=Path\To\Your\Code\Password-Manager\Data\Database.accdb;")
     cursor = conn.cursor()
     cursor.execute("UPDATE Key SET key_value = (?) WHERE key_name = 'Key'", (key))
     conn.commit()
