@@ -4,7 +4,7 @@ import pyodbc
 
 
 def writePass(passName, passWord):
-    conn = pyodbc.connect(r"Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=D:\Code\Password-Manager\Data\Database.accdb;")
+    conn = pyodbc.connect(r"Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=Path\To\Your\Code\Password-Manager\Data\Database.accdb;")
     cursor = conn.cursor()
     cursor.execute("INSERT INTO Data (data_name, data_pass) VALUES (?, ?)", (passName, encryption(passWord)))
     conn.commit()
