@@ -3,9 +3,26 @@ This is a Python-based password manager designed to keep your sensitive informat
 <br />
 <br />
 
-This project is coded purely in python. However, it uses a few python modules. To install the modules, run the code:
+# Modules
+This project is coded purely in python. However, it uses a few python modules. Such as:
+1. cryptography
+2. pycparser
+3. pyodbc
+<br />
+
+# Installation
+To install the modules, run the code:
 ```markdown
   pip install -r requirements. txt
 ```
 <br/>
+
+#Features
+This script can:
+1. Write password into database.
+2. View password from database.
+3. Show the list of all commands.
+4. Exit on command.
+<br />
+
 Best of luck!
