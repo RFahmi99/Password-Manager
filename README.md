@@ -17,6 +17,17 @@ To install the modules, run the code:
 ```
 <br/>
 
+# Modifications
+1. Go to Functions and open access.py and change the following line:
+```markdown
+7  conn = pyodbc.connect(r"Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=Path\To\Your\Code\Password-Manager\Data\Database.accdb;")
+```
+
+Change the **Path\To\Your\Code** to your directory path.<br />
+2. Open database.py, key.py and make the same modification.<br />
+3. Run the application through app.py and enjoy.<br />
+<br /> 
+
 #Features
 This script can:
 1. Write password into database.
